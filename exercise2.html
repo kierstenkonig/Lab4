@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Lab4 – Exercise 1</title>
+    </head>
+
+    <body>
+        <h1>JavaScript Lab</h1>
+        <script>
+            // No default values
+            /*
+            function add(num1, num2){
+                return num1 + num2;
+            }
+
+            function sub(num1, num2){
+                return num1 - num2;
+            }
+            */
+
+            // Default values
+            /*function add(num1, num2 = 2){
+                return num1 + num2;
+            }
+
+            function sub(num1, num2 = 5){
+                return num1 - num2;
+            }
+            */
+
+            // Arrow notation
+            let add = (num1, num2) => num1 + num2;
+
+            let sub = (num1, num2) => num1 - num2;
+
+            let mul = (num1, num2) => num1 * num2;
+
+            let div = (num1, num2) => {
+                if(num2 == 0){
+                    console.log("Error, cannot divide by 0");
+                } else{
+                    return num1 / num2;
+                }
+            }
+
+            function calculator(num1, num2, callback){
+                return callback(num1, num2);
+            }
+
+        </script>
+    </body>
+</html>
