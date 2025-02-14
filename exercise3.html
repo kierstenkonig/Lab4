@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Lab 4 - Exercise 3
+        </title>
+    </head>
+
+    <body>
+        <script>
+            // Initialize the array
+            let classRoster = ['Alice', 'Tom', 'Charlie', 'Diana', 'Evan'];
+            let classRosterString = classRoster.toString();
+
+            //Display the roster
+            console.log(classRosterString);
+            console.log(classRoster);
+
+            // Add new names
+            classRoster.push('Fiona');
+            classRoster.push('Nancy');
+
+            // Remove Alice
+            classRoster.shift();
+
+            console.log(classRoster);
+            console.log(classRoster.length);
+
+            // Creating objects
+            let classInfo = {
+                className: 'ENSF381: Full Stack Web Development',
+                instructor: 'Dr. Smith',
+                students: classRoster,
+                details: {
+                    semester: "Winter",
+                    year: "2025",
+                },
+                schedule: ['Monday', 'Wednesday', 'Friday'],
+            }
+
+            // Make changes and Log
+            classInfo.instructor = 'Dr.Deb';
+            console.log(classInfo.className);
+            console.log(classInfo.instructor);
+            console.log(classInfo.students);
+            console.log(classInfo.details.semester);
+            console.log(classInfo);
+
+            // Destructure variables
+            let className = classInfo.className;
+            let students = classInfo.students;
+
+            console.log(className);
+            console.log(students);
+        </script>
+    </body>
+</html>
