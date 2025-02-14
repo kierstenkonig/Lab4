@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab4 - Exercise 1</title>
+</head>
+<body>
+    <h1>Javascript Lab</h1>
+    <script>
+        //JavaScript code here
+
+        // Variable Declaration
+        let x = 3;
+        let y = 4;
+        const z = 6;
+
+        if(x < 10){
+            let x = 25;
+            console.log(x);
+        }
+        console.log(x);
+
+        if(y == 4){
+            let y = 25;
+            console.log(y);
+        }
+        console.log(y);
+
+
+        if(true){
+            const z = 25;
+            console.log(z);
+        }
+        console.log(z);
+
+
+        // String Operations
+        string1 = "Hello World!"
+        string2 = "JavaScript is fun!"
+
+        let len1 = string1.length;
+        console.log(len1);
+        let conc = string1.concat(string2);
+        console.log(conc);
+        let newStr = string2.replace("fun", "awesome");
+        console.log(newStr);
+
+        // String Templates
+        name = "Alice"
+        age = 25
+
+        let greeting = `Hello, my name is ${name} and I am ${age} years old`;
+        console.log(greeting);
+
+        // Working with Dates
+        let date = new Date();
+        console.log(date);
+        
+        console.log(date.getFullYear());
+        console.log(date.getMonth() + 1);
+        console.log(date.getDate());
+        
+
+        let num = date.getDay();
+        let weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        let month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        let day = weekday[num];
+
+        console.log(num, day);
+        
+
+
+    </script>
+</body>
+</html>
