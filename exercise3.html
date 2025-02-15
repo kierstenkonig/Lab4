@@ -46,12 +46,27 @@
             console.log(classInfo.details.semester);
             console.log(classInfo);
 
-            // Destructure variables
+            // Destructure variables and log
             let className = classInfo.className;
             let students = classInfo.students;
 
             console.log(className);
             console.log(students);
+
+            // Destructure more variables and log
+            let semester = classInfo.details.semester;
+            let year = classInfo.details.year;
+
+            console.log(semester);
+            console.log(year);
+
+            // Destructure array
+            let [student1, student2] = classRoster;
+            let remainingStudents = classRoster.slice(2);
+
+            console.log(student1);
+            console.log(student2);
+            console.log(remainingStudents);
         </script>
     </body>
 </html>
